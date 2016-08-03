@@ -5,3 +5,4 @@ node_js:
 before_install:
   - node --version
   - npm --version
+  - npm install grunt-cli --global

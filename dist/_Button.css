@@ -1,0 +1,95 @@
+
+/* Button
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']{
+	background-color: var(--color-primary);
+	border: .1rem solid var(--color-primary);
+	border-radius: .4rem;
+	color: var(--color-initial);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 700;
+	height: 3.8rem;
+	letter-spacing: .1rem;
+	line-height: 3.8rem;
+	padding: 0 3.0rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus{
+		background-color: var(--color-secondary);
+		border-color: var(--color-secondary);
+		color: var(--color-initial);
+		outline: 0;
+	}
+
+	&.button-disabled,
+	&[disabled]{
+		opacity: .5;
+		cursor: default;
+
+		&:hover,
+		&:focus{
+			background-color: var(--color-primary);
+			border-color: var(--color-primary);
+		}
+	}
+
+	&.button-outline{
+		color: var(--color-primary);
+		background-color: transparent;
+
+		&:hover,
+		&:focus{
+			color: var(--color-secondary);
+			background-color: transparent;
+			border-color: var(--color-secondary);
+		}
+
+		&.button-disabled,
+		&[disabled]{
+
+			&:hover,
+			&:focus{
+				color: var(--color-primary);
+				border-color: inherit;
+			}
+
+		}
+
+	}
+
+	&.button-clear{
+		color: var(--color-primary);
+		background-color: transparent;
+		border-color: transparent;
+
+		&:hover,
+		&:focus{
+			color: var(--color-secondary);
+			background-color: transparent;
+			border-color: transparent;
+		}
+
+		&.button-disabled,
+		&[disabled]{
+
+			&:hover,
+			&:focus{
+				color: var(--color-primary);
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,71 @@
+{
+  "name": "milligram-cssnext",
+  "version": "1.0.0",
+  "description": "A minimalist CSS framework on CSSNext version.",
+  "homepage": "http://milligram.github.io",
+  "repository": "milligram/milligram-cssnext",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "main": "dist/milligram.css",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "css3",
+    "flexbox",
+    "front-end",
+    "framework",
+    "html",
+    "html5",
+    "kickstarter",
+    "less",
+    "responsive",
+    "mobile",
+    "mobile-first",
+    "postcss",
+    "responsive",
+    "postcss",
+    "scss",
+    "stylus",
+    "cssnext"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".github",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "bower.json",
+    "changelog.md",
+    "component.json",
+    "composer.json",
+    "gruntfile.js",
+    "package.js",
+    "package.json",
+    "test"
+  ],
+  "dependencies": {
+    "normalize.css": "latest"
+  },
+  "devDependencies": {
+    "bower": "^1.6.8",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-cssnano": "^2.1.0",
+    "grunt-newer": "^1.1.1",
+    "grunt-notify": "^0.4.3",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.3.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2",
+    "time-grunt": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "start": "grunt",
+    "test": "grunt build"
+  }
+}
